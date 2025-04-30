@@ -43,7 +43,7 @@ In this step, words are converted into vectors (numerical representations) using
 - After embedding, a similarity score is calculated to group tokens by related meaning. Each token is also assigned a position in the sentence to preserve the order.
 - Helps the model differentiate between:
 - "Dog bites man" vs. "Man bites dog"
-![_- visual selection (3)](https://github.com/trishnabhattarai/how-does-language-model-work/blob/main/_-%20visual%20selection%20(3).png)
+![ss.png](https://github.com/trishnabhattarai/how-does-language-model-work/blob/main/ss.png)
 
 ## 🧠 4. Transformer Architecture (Neural Network)
 - The Transformer is the heart of modern language models. It typically includes:
