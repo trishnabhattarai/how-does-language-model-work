@@ -26,6 +26,7 @@ However, language models do not understand human language directly. They need to
 - Removes duplicates using set().
 - Compares user input against pre-trained data.
 
+
 ## 🔢 2. Word Embedding
 In this step, words are converted into vectors (numerical representations) using statistical and mathematical concepts like:
 - Linear Algebra
