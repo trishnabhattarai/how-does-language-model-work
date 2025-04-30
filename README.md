@@ -25,7 +25,7 @@ However, language models do not understand human language directly. They need to
 - Tokenizes and cleans input.
 - Removes duplicates using set().
 - Compares user input against pre-trained data.
-
+![_- visual selection (1)](https://github.com/trishnabhattarai/how-does-language-model-work/blob/main/_-%20visual%20selection%20(1).png)
 
 ## 🔢 2. Word Embedding
 In this step, words are converted into vectors (numerical representations) using statistical and mathematical concepts like:
@@ -37,11 +37,13 @@ In this step, words are converted into vectors (numerical representations) using
   - If the vectors for “play” and “playing” are 0.33 and 0.35, a new word like “played” can be given an average vector:
 (0.33 + 0.35) / 2 = 0.34.
   - This helps the model recognize “played” as similar to “play” and “playing”.
+![_- visual selection (2)](https://github.com/trishnabhattarai/how-does-language-model-work/blob/main/_-%20visual%20selection%20(2).png)
 
 ## 📊 3. Numerical Embedding & Positional Encoding
 - After embedding, a similarity score is calculated to group tokens by related meaning. Each token is also assigned a position in the sentence to preserve the order.
 - Helps the model differentiate between:
 - "Dog bites man" vs. "Man bites dog"
+![_- visual selection (3)](https://github.com/trishnabhattarai/how-does-language-model-work/blob/main/_-%20visual%20selection%20(3).png)
 
 ## 🧠 4. Transformer Architecture (Neural Network)
 - The Transformer is the heart of modern language models. It typically includes:
@@ -68,6 +70,7 @@ In this step, words are converted into vectors (numerical representations) using
   - Embedding → Positional Encoding
   - Transformer (Encoders + Decoders) → Output
   - Reverse process is applied to generate the response
+![_- visual selection (4)](https://github.com/trishnabhattarai/how-does-language-model-work/blob/main/_-%20visual%20selection%20(4).png)
 
 This is how modern Language Models, such as ChatGPT, BERT, and GPT, convert human language into something they can process, understand, and respond to intelligently.
 
