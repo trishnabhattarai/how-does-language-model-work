@@ -6,7 +6,16 @@ import TypingIndicator from './TypingIndicator';
 import { useChatContext } from '../context/ChatContext';
 
 const MessageList: React.FC = () => {
-  const { messages, isAiTyping } = useChatContext();
+  const context = useChatContext();
+  if (!context) {
+    return (
+      <div className="p-4 text-center text-gray-500">
+        Chat context not available. Please try reloading the page.
+      </div>
+    );
+  }
+
+  const { messages, isAiTyping } = context;
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -46,4 +55,4 @@ const MessageList: React.FC = () => {
   );
 };
 
-export default MessageList
+export default MessageList;
